@@ -192,7 +192,7 @@
       <div>
         <h1>🌦️ Weather </h1>
         <div class="search-row" style="margin-top:10px;">
-          <input id="cityInput" type="text" placeholder="Enter city — e.g., Delhi" />
+          <input id="cityInput" type="text" placeholder="Enter city — e.g., " />
         </div>
       </div>
 
@@ -208,7 +208,7 @@
         <div class="current">
           <lottie-player id="lottieIcon" class="icon" autoplay loop></lottie-player>
           <div class="current-info">
-            <div class="city" id="cityName">Delhi</div>
+            <div class="city" id="cityName"> </div>
             <div class="temp" id="temp">--°C</div>
             <div class="desc" id="desc">--</div>
             <div class="meta" aria-live="polite">
@@ -536,7 +536,7 @@ themeBtn.onclick = () => {
 };
 
 /* ========== Kickoff ========== */
-fetchWeather('');
+fetchWeather( );
 
 /* Ensure canvas uses CSS pixel coordinates for drawing (we used scaling earlier in setup) */
 (function ensureCanvasSetup(){
@@ -546,4 +546,5 @@ fetchWeather('');
 </script>
 </body>
 </html>
+
 
